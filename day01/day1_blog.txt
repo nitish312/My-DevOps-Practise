@@ -1,0 +1,30 @@
+What is DevOps?
+DevOps is nothing but a practice or methodology of making "Developers" and "Operations" teams work together. It enables seamless cooperation among teams and encourages a culture of continuous feedback and improvement.
+
+What is Automation, Scaling and Infrastructure?
+Automation refers to the practice of automating manual and repetitive tasks throughout the software development and delivery lifecycle. This reduces the chances of human error and accelerates the development cycle.
+
+Scaling is the ability of an application or system to handle increased workload or demand effectively.
+
+For example, when we see the cricket match on hotstar platform and there comes a time (last deciding overs) when the viewership increases rapidly and after some the match it reduces to the lowest, meanwhile this scale up and scale down of servers is carried out under the term scaling of resources.
+
+Infrastructure refers to the underlying hardware, software, networks, and services required to support the development, deployment, and operation of software applications. It encompasses all the components and resources needed to run an application or service effectively. Infrastructure in DevOps can be physical, virtual, or cloud-based, depending on the organization's setup and requirements.
+
+Why it is important?
+Faster software delivery
+
+Scalability and Reliability
+
+Improved collaboration between teams
+
+Quick and frequent updates
+
+Better adaptation to changing customer needs
+
+Continuous improvement and learning
+
+Cost saving
+
+In summary, DevOps is a collaborative practice that brings together developers and operations teams, fostering a culture of continuous feedback and improvement. Automation streamlines manual tasks in the software development process, reducing errors and speeding up development. Scaling ensures applications can handle increased demand effectively. Infrastructure encompasses the necessary hardware, software, and resources for running applications.
+
+Thanks for being till the end of the blog. I hope that this blog helps you in understanding DevOps.
