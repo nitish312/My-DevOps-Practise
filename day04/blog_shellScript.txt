@@ -1,0 +1,40 @@
+Today, we'll dive into the basics of Linux shell scripting. Let's jump right in and master the essentials of shell scripting together.💻🚀
+
+What is a kernel? 🌟
+It is the central part of an operating system that manages communication between software and hardware while ensuring everything runs smoothly.
+
+What is a shell? 🛠️
+Shell is a user interface that provides a way for humans to interact with an operating system.
+
+There are two types of shell:
+
+CLI (Command Line Interface)
+
+GUI (Graphical User Interface)
+
+What is Linux Shell scripting? ⚙️
+This involves writing a series of commands and instructions in a file, which can be executed by the shell whenever we want.
+
+Our shell script file must have .sh extension.
+
+Shell Scripting for DevOps ♾️
+Shell scripting in terms of DevOps is using scripts to automate the tasks in the software development and operations processes.
+
+It's a way to bridge the gap between software development (Dev) and IT operations (Ops) by automating tasks that help in deploying, managing and monitoring software systems.
+
+How To Write A Shell Script? ⚙️
+Create a script file using the command nano <filename>.sh
+
+Run the script using the command bash <filename>.sh
+
+For example,
+
+
+
+This is the content of the script file created using the above steps.
+
+
+
+As we can see the script uses its magic to prompt enter your name message, reads the input and then prints it along with any command-line arguments we had provided.
+
+Thanks for being till the end of the blog. I hope that this blog helps you in having basic idea about the shell scripting. We will see some advance concepts in the upcoming blogs.
