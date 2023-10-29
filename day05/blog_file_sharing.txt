@@ -1,0 +1,56 @@
+Sharing Files From Local Machine To Remote AWS EC2 Instance And Vice-versa
+
+How To Share Files From Local Computer To Remote Server ⚙️
+How To Share Files From To Local Computer ⚙️
+Today we'll see how effortlessly we can share files between our local computer and an AWS EC2 instance. All you need is an AWS account and basic command line knowledge. We'll directly jump on to the steps. Let's get started.💻🚀
+
+How To Share Files From Local Computer To Remote Server ⚙️
+Set up your EC2 instance.
+
+Connect to the instance.
+
+Transfer the file using scp command.
+
+scp command or secure copy is used to transfer the files.
+
+Syntax:
+
+scp [-i identity_file] <file_name> [[user@]remote_machine:]
+
+For Example:
+
+scp -i "remoteKey.pem" file_at_Local.txt ubuntu@ec2-13-115-79-100.ap-northeast-1.compute.amazonaws.com:/home/ubuntu/AllFiles
+"remoteKey.pem" file is our keypair downloaded at the time of instance launch.
+
+(Note: keypair file (.pem) should be present at our current path in the local machine
+
+"file_at_Local.txt" is our source file which is supposed to be sent to a remote server.
+
+"ubuntu@ec2..." is the destination where the source will be transferred.
+
+This is the initial state of our remote server.
+
+
+
+Now we'll create one file and send it to the EC2 instance.
+
+
+
+Let's check our destination instance (Remote server).
+
+
+
+Superb! We have successfully sent the file from our local machine to the remote AWS EC2 instance server.🌟
+
+How To Share Files From To Local Computer ⚙️
+Just change the source and destination paths, that's it.
+
+
+Created the "file_at_remote.txt" file at a remote server.
+
+
+Initially, we tried to locate the file in our local folder, but it was not present.
+
+Now after transferring the file using scp command, we can see that the file is transferred to the local machine.🌟
+
+Thanks for being till the end of the blog. I hope that this blog helps you to get an overview of how we can transfer files between local and remote machines. I will demonstrate how we can create an AWS EC2 instance and connect to it in the upcoming blog.
