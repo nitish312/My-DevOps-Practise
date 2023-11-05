@@ -1,0 +1,81 @@
+How To Change Permissions And Ownership Of The File or Directory
+
+Earlier we have seen how to check the permission of any file or directory, now we will see how to change these permissions.
+
+In Linux, when we want to modify file or directory permissions, we use the chmod command. If you are a user or group owner of a file then no need to use sudo before chmod
+
+Changing permissions can be done in two ways:
+
+Symbolic method
+
+Absolute method
+
+Symbolic method (ugo):
+
+"u" is for User
+
+"g" is for Group
+
+"o" is for Other"
+
+Absolute method:
+
+The digits from 0 to 7 represent different combinations of permissions.
+
+Be aware that using this method will replace the current permissions for all roles.
+
+
+
+Just remember which number corresponds to each permission.
+
+The below command shows the file.txt has some permissions and we are granting execute permission. So we will be giving the appropriate number to make it executable.
+
+
+COPY
+
+COPY
+chmod 705 file.txt
+ls -l file.txt
+chmod 777 filename It will grant all permissions for all the roles.
+
+File Ownership 👤
+To change ownership chown & chgrp command is used
+
+If you are a user or group owner of a file then no need to use sudo before chown
+
+There are two types of owners for each file
+
+User Owner
+
+Group Owner
+
+Using numbers in the Absolute method provides a quick and precise way to manage permissions in Linux.
+
+Access Control Lists (ACL)
+Access Control Lists (ACLs) let you give very specific permissions to a file or folder without changing the basic ownership and permissions.
+
+Unlike the usual permissions (for owner, group, and others), ACL allows you to set exact access for particular users or groups.
+
+Remember these two commands for working with ACL: 'getfacl' to check ACL settings (🔍) and 'setfacl' to make changes (🛠️).
+
+To see the ACL settings of a file, use:
+
+
+COPY
+
+COPY
+getfacl file.txt
+Note: To use ACL, first install it with the command 'sudo apt install acl'.
+
+To adjust ACL entries and grant specific permissions to users or groups, use the 'setfacl' command. For instance, to allow a user to read, write, and execute, follow these steps: ✨
+
+
+COPY
+
+COPY
+setfacl -m u::rw file.txt
+ACLs provide a neat way to manage file permissions, especially in tricky situations where you need to give specific individuals or groups special access.
+
+Thanks for being till the end of the blog. I hope that this blog helps you to get an overview of changing file permissions in Linux.
+
+By Nitish Chintakindi
