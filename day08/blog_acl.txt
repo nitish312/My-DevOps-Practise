@@ -1,0 +1,26 @@
+We have seen file permissions do a fantastic job of managing access on a basic level, but sometimes we need more efficient control. That's where Access Control Lists (ACLs) come into play. Unlike traditional file permissions, which only offer user, group and other levels of access.
+
+It allows us to give a more specific set of permissions to a file or a directory without changing base ownership and permissions
+
+ACLs allow us to grant or deny permissions for multiple users and groups simultaneously. This extra flexibility is very much capable, especially in complex organizational settings where different users require varying levels of access.
+
+Why use ACLs? 🤔
+Imagine you have a special situation. You want to let many people use a file or folder, but each person needs to do different things with it. The usual way of doing this on Linux might not work very well. That's when ACLs step in. They give you a very detailed way to say who can do what. 💪
+Installing ACL in your system⬇️
+In most of the latest Linux versions, the ACL package comes pre-installed. However, if it's not present, use the following command to install it:
+
+
+sudo apt-get install acl
+How to use ACLs? 📑
+Suppose we have a file named "demom.txt" and two users: "user1" and "user2". We want to grant 'user1' read and write permissions and 'user2' only read permission. So we will write:
+
+
+setfacl -m u:user1:rw example.txt
+setfacl -m u:user2:r example.txt
+Output:
+
+
+user::rw-
+user:user1:rw-
+user:user2:r--
+Thanks for being till the end of the blog. I hope that this blog helps you to get a brief introduction to ACLs in Linux.
